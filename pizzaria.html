@@ -63,37 +63,58 @@
                 </div>
             </fieldset>
             <fieldset>
+                <legend>Combos:</legend>
+                <div>
+                    <input type="radio" id="combination" name="Combos">
+                    <label for="combination">Combination Pizza</label>
+                </div>
+                <div>
+                    <input type="radio" id="hawaiian" name="Combos">
+                    <label for="hawaiian">Hawaiian Pizza</label>
+                </div>
+                <div>
+                    <input type="radio" id="makeOwn" name="Combos">
+                    <label for="makeOwn">Choose your own toppings</label>
+                </div>
+            </fieldset>
+            <fieldset>
                 <legend>Toppings:</legend>
                 <div>
-                    <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles">
-                    <label for="sprinkles">Sprinkles</label>
+                    <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="whippedCream" name="whippedCream" value="whippedCream">
-                    <label for="whippedCream">Whipped Cream</label>
+                    <input type="checkbox" id="cheese" name="cheese" value="cheese">
+                    <label for="cheese">Mozzarella Cheese</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="caramel" name="caramel" value="caramel">
-                    <label for="caramel">Caramel Sauce</label>
+                    <input type="checkbox" id="olives" name="olives" value="olives">
+                    <label for="olives">Olives</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="pineapples" name="pineapples" value="olives">
+                    <label for="pineapples">Pineapples</label>
                 </div>
             </fieldset>
             <fieldset>
                 <div>
-                    <label for="container">Please Choose One</label>
-                    <select name="container" id="container">
-                        <option value="cup">Plastic Cup</option>
-                        <option value="sugar">Sugar Cone</option>
-                        <option value="waffle">Waffle Cone</option>
-                        <option value="dippedWaffle">Chocolate Dipped Waffle Cone</option>
+                    <label for="receive">Please Choose One</label>
+                    <select name="receive" id="receive">
+                        <option value="pickUp">Pick Up</option>
+                        <option value="delivery">Delivery</option>
                     </select>
                 </div>
             </fieldset>
             <fieldset>
                 <label for="SpecialRequests">Special Requests:</label>
-                <textarea id="SpecialRequests" name="Special Requests" rows="4" cols="10" placeholder="Allergic to peanuts, substitutions, etc."></textarea>
+                <textarea id="SpecialRequests" name="Special Requests" rows="4" cols="10" placeholder="Times,Leave at door, etc."></textarea>
             </fieldset>
-            <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
-            <button type="submit">Submit Order</button>
+            <button type="button" onclick="alert('Free for the next hour!')">Calculate Cost</button>
+            <button type="submit" onclick="alert('Thank you for ordering a pizza!')">Submit Order</button>
         </form>
     </div>
 </div>
